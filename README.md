@@ -9,6 +9,8 @@ s tournaments, teams, and games.
 
 ## Project Structure
 ```
+|__ .env
+|
 ├── BackEnd/           # Node.js backend server
 │   ├── main.js       # Main server file
 │   ├── database.js   # Database configuration
