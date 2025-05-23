@@ -1,6 +1,11 @@
 # Esports Management System
 
-A full-stack web application for managing esports tournaments, teams, and games.
+A full-stack web application for managing esport
+
+https://github.com/user-attachments/assets/4f12a69b-54c4-4734-93ba-bfe306342968
+
+s tournaments, teams, and games.
+
 
 ## Project Structure
 ```
@@ -59,47 +64,6 @@ Username: admin@esports.com
 Password: admin123
 ```
 
-### Sample Teams
-1. Team Alpha
-   - Game: League of Legends
-   - Members: 5
-   - Region: North America
-
-2. Team Beta
-   - Game: Counter-Strike
-   - Members: 5
-   - Region: Europe
-
-3. Team Gamma
-   - Game: Dota 2
-   - Members: 5
-   - Region: Asia
-
-### Sample Games
-1. League of Legends
-   - Publisher: Riot Games
-   - Type: MOBA
-
-2. Counter-Strike
-   - Publisher: Valve
-   - Type: FPS
-
-3. Dota 2
-   - Publisher: Valve
-   - Type: MOBA
-
-### Sample Tournaments
-1. Summer Championship 2024
-   - Game: League of Legends
-   - Prize Pool: $50,000
-   - Start Date: 2024-06-01
-   - End Date: 2024-06-15
-
-2. Winter Masters 2024
-   - Game: Counter-Strike
-   - Prize Pool: $100,000
-   - Start Date: 2024-12-01
-   - End Date: 2024-12-20
 
 ## Features
 - User Authentication (Admin/User roles)
@@ -109,34 +73,6 @@ Password: admin123
 - Player Registration
 - Match Scheduling
 - Results Tracking
-
-## API Endpoints
-
-### Authentication
-- POST /api/auth/login
-- POST /api/auth/register
-- GET /api/auth/logout
-
-### Teams
-- GET /api/teams
-- POST /api/teams
-- GET /api/teams/:id
-- PUT /api/teams/:id
-- DELETE /api/teams/:id
-
-### Games
-- GET /api/games
-- POST /api/games
-- GET /api/games/:id
-- PUT /api/games/:id
-- DELETE /api/games/:id
-
-### Tournaments
-- GET /api/tournaments
-- POST /api/tournaments
-- GET /api/tournaments/:id
-- PUT /api/tournaments/:id
-- DELETE /api/tournaments/:id
 
 ## Technologies Used
 - Frontend:
@@ -159,6 +95,3 @@ Password: admin123
 3. Commit your changes
 4. Push to the branch
 5. Create a new Pull Request
-
-## License
-This project is licensed under the ISC License. 
