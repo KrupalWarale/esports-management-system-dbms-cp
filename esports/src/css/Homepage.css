@@ -1,0 +1,119 @@
+body{
+    background-color: rgba(0, 0, 0, 0.527); 
+    color: rgba(240, 248, 255, 0.558);
+    /* background-image: url('https://w.wallhaven.cc/full/45/wallhaven-45ppe9.jpg'); */
+    /* background-size: contain; */
+    background-blend-mode: color-dodge ;
+    /* position: fixed; */
+}
+.main-container-home{
+  display: flex;
+  margin: auto;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  /* padding: 10% 0% 10% 0%; */
+}
+.container {
+    display: flex; /* Use flexbox layout */
+    width: 100vw;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+.left-div, .right-div {
+  flex: 1; /* Distribute remaining space equally */
+}
+
+
+.right-div {
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  height: 30vh;
+  width: 20vw;
+  transition: all 1s ease;
+  color: rgba(255, 255, 255, 0.937);
+}
+.left-div {
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  height: 30vh;
+  width: 20vw;
+  transition: all 1s ease;
+  color: rgba(255, 255, 255, 0.937);
+}
+.team_logo{
+  width: 20vw;
+  /* padding-bottom: 10vh; */
+  filter: invert(100);
+  transition: all 1s ease;
+}
+.game_logo{
+  width: 20vw;
+  height:max-content;
+  /* padding-top: 5vh; */
+  transition: all 1s ease;
+}
+.text_home{
+  text-decoration: none;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.outer-animation{
+  transition: all 1.5s ease;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  z-index: 4;
+}
+.home-text{
+  position: absolute;
+  width: 20%;
+  text-align: justify;
+  transform: translateY(10vh) rotateX(-90deg);
+  /* bottom: 25vh; */
+  opacity: 0%;
+  transition: all 1s ease;
+}
+.outer-animation:hover .game_logo{
+  transform: translateY(-10vh) rotateX(90deg);
+  opacity: 0%;
+}
+.outer-animation:hover .team_logo{
+  transform: translateY(-10vh) rotateX(90deg);
+  opacity: 0%;
+}
+.outer-animation:hover .home-text{
+  transform: translateY(0vh);
+  opacity: 100%;
+}
+
+@media (min-width: 600px) and (max-width:1024px){
+  .container{
+    /* background-color: #fff; */
+    flex-direction: row;
+  }
+  .text_home{
+    height: 20vh;
+  }
+  .home-text{
+    font-size: 10px;
+  }
+}

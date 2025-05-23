@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+.add-data-header {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    font-family: Poppins;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.main-div {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.add-data-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    gap: 5px;
+}
+
+.add-data-form-container-1, .add-data-form-container-2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    /* width: 25vw; */
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.add-data-form-container-1 {
+    background-color: #363636c2;
+}
+
+.add-data-form-container-2 {
+    background-color: #ffffff99;
+}
+
+.team-submit, .player-submit, .merch-submit {
+    padding: 10px 15px 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    /* margin: auto; */
+    background-color: rgba(60, 60, 60, 0.73);
+    color: silver;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: Poppins;
+    font-size: 17px;
+    box-shadow: 2px 5px 10px rgb(0, 0, 0);
+    transition: all 1s ease;
+}
+
+.team-submit:hover, .player-submit:hover, .merch-submit:hover {
+    transform: scale(110%) translateY(-2px);
+    box-shadow: 7px 7px 15px black;
+}
+
+.reset, .reset-1 {
+    width: fit-content;
+    font-family: Poppins;
+}
+
+.reset-1 {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.vertical-line {
+    border: rgb(0, 0, 0) solid 1px;
+    height: 70%;
+    margin: 2%;
+    width: 0px;
+}
+
+.add-data-form-text {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-top: 4vh;
+}
+
+.add-data-form-inputs {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 10px;
+    width: 100%;
+    color: white;
+    flex-direction: column;
+}
+
+.add-data-form-input-insides {
+    background-color: #70707099;
+    height: 5vh;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: Poppins;
+    color: white;
+    padding-left: 10%;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 50;
+}
+
+.add-data-form-input-insides::placeholder {
+    color: white;
+}
+
+.add-data-form-input-insides-image {
+    position: relative;
+    left: 10%;
+    scale: 120%;
+    padding: 2px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    overflow: hidden;
+}
+
+.conditional-com-1 {
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.main-form-container {
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hide {
+    opacity: 0;
+    transform: translateY(2vh);
+    visibility: hidden;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    font-family: Poppins;
+    font-size: 20px;
+    align-items: center;
+    background-color: rgb(65, 65, 65);
+    width: 60%;
+    transition: all 1s ease;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    position: relative;
+}
+
+.labels {
+    margin-right: 10px;
+}
+
+.merch-price, .merch-name {
+    height: 5vh;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: #323232;
+}
+
+.form-for-merch {
+    display: flex;
+    /* gap: 90px; */
+}
+
+.form-container-for-merch {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.select-photo {
+    padding-top: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 1200px) {
+    .add-data-form-container-1, .add-data-form-container-2 {
+        width: 75vw;
+    }
+    .add-data-form-input-insides{
+        font-size: 30px;
+    }
+    .add-data-form-input-insides option{
+        font-size: 13px;
+    }
+    .merch-submit, .team-submit, .player-submit {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .add-data-form-container-1, .add-data-form-container-2 {
+        width: 90vw;
+        flex-direction: column;
+    }
+
+    .form-for-merch {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .add-data-form-container-1, .add-data-form-container-2 {
+        width: 90vw;
+        padding: 10px;
+    }
+
+    .merch-price, .merch-name {
+        font-size: 16px;
+        width: 100px;
+    }
+
+    .popup-content {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .merch-submit, .team-submit, .player-submit {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Make sure dropdown selects are visible and accessible */
+select.add-data-form-input-insides {
+    background-color: #454545;
+    cursor: pointer;
+    z-index: 1000 !important;
+    position: relative;
+}
+
+/* Make dropdown options more visible */
+select.add-data-form-input-insides option {
+    background-color: #454545;
+    color: white;
+    padding: 10px;
+    z-index: 1001 !important;
+}
+
+/* Fix select dropdown appearance */
+select.add-data-form-input-insides:focus {
+    outline: 2px solid #4a90e2;
+}
+
+/* Show disabled options differently */
+select.add-data-form-input-insides option:disabled {
+    color: #999;
+}
+
+/* Special styles for the captain dropdown */
+#captain {
+    background-color: #2c3e50;
+    border: 2px solid #3498db;
+    z-index: 2000 !important;
+    position: relative;
+}
+
+#captain option {
+    background-color: #2c3e50;
+    padding: 12px;
+    font-size: 18px;
+    z-index: 2001 !important;
+}
+
+#captain:focus {
+    outline: 3px solid #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}

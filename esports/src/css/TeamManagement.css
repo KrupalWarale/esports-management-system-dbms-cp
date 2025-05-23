@@ -1,0 +1,525 @@
+.management-container {
+    padding: 2rem;
+    min-height: 80vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.management-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.management-header h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #4a90e2, #87ceeb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.management-description {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Admin tabs */
+.admin-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.tab-button {
+    background-color: rgba(32, 32, 32, 0.8);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tab-button:hover {
+    background-color: rgba(50, 50, 50, 0.8);
+}
+
+.tab-button.active {
+    background-color: #4a90e2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Dashboard section */
+.dashboard-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.stat-card {
+    background-color: rgba(32, 32, 32, 0.8);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.stat-card h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4a90e2;
+    margin: 0.5rem 0 1rem;
+}
+
+.stat-action {
+    display: inline-block;
+    background-color: rgba(74, 144, 226, 0.2);
+    color: #4a90e2;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.stat-action:hover {
+    background-color: rgba(74, 144, 226, 0.4);
+}
+
+.quick-actions {
+    background-color: rgba(32, 32, 32, 0.8);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.quick-actions h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #4a90e2;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.action-icon {
+    font-size: 1.3rem;
+}
+
+.action-button:hover {
+    background-color: #3a7bbf;
+    transform: translateY(-2px);
+}
+
+.recent-activity {
+    background-color: rgba(32, 32, 32, 0.8);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.recent-activity h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.recent-teams {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.recent-team-card {
+    background-color: rgba(50, 50, 50, 0.8);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.recent-team-card h3 {
+    color: #4a90e2;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.recent-team-card p {
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.view-details-btn {
+    background-color: rgba(74, 144, 226, 0.2);
+    color: #4a90e2;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-weight: bold;
+}
+
+.view-details-btn:hover {
+    background-color: rgba(74, 144, 226, 0.4);
+}
+
+/* Teams section */
+.teams-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.teams-list,
+.team-details {
+    background-color: rgba(32, 32, 32, 0.8);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.teams-list h2,
+.team-details h2,
+.games-section h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.team-card {
+    background-color: rgba(50, 50, 50, 0.8);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.team-card.selected {
+    border: 1px solid #4a90e2;
+    background-color: rgba(74, 144, 226, 0.2);
+}
+
+.team-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #4a90e2;
+}
+
+.team-card p {
+    margin: 0.5rem 0;
+    color: #ccc;
+}
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.player-card {
+    background-color: rgba(50, 50, 50, 0.8);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 250px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #4a90e2;
+}
+
+.player-card p {
+    margin: 0.5rem 0;
+    color: #ccc;
+}
+
+/* Games section */
+.games-section {
+    background-color: rgba(32, 32, 32, 0.8);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.game-card {
+    background-color: rgba(50, 50, 50, 0.8);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.game-card h3 {
+    color: #4a90e2;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.game-card p {
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.enroll-button {
+    margin-top: auto;
+    background-color: rgba(74, 144, 226, 0.2);
+    color: #4a90e2;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.enroll-button:hover {
+    background-color: rgba(74, 144, 226, 0.4);
+}
+
+.no-games {
+    text-align: center;
+    color: #ccc;
+    padding: 2rem;
+}
+
+.loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    color: white;
+    margin: 2rem 0;
+}
+
+.admin-content {
+    min-height: 500px;
+}
+
+/* Responsive styles */
+@media (min-width: 992px) {
+    .teams-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .management-container {
+        padding: 1rem;
+    }
+    
+    .management-header h1 {
+        font-size: 2rem;
+    }
+    
+    .tab-button {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .teams-list,
+    .team-details,
+    .games-section,
+    .quick-actions,
+    .recent-activity {
+        padding: 1.5rem;
+    }
+    
+    .stat-card {
+        padding: 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .action-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.add-game-form {
+    background-color: rgba(32, 32, 32, 0.8);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.add-game-form h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.add-game-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.add-game-form label {
+    display: block;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.add-game-form input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(30, 30, 30, 0.8);
+    color: white;
+    font-size: 1rem;
+}
+
+.add-game-form .submit-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.add-game-form .submit-btn:hover {
+    background-color: #3a7bbf;
+}
+
+.add-game-form .submit-btn:disabled {
+    background-color: #77a7d9;
+    cursor: not-allowed;
+}
+
+.team-creator {
+    color: #4a90e2;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.no-teams {
+    text-align: center;
+    color: #ccc;
+    padding: 2rem;
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+} 

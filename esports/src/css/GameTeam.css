@@ -1,0 +1,23 @@
+.header-game-team {
+    /* padding-top: 100px; */
+    /* margin-bottom: -100px; */
+    font-size: 50px;
+    color: white;
+    font-family: Poppins;
+    font-weight: 500;
+    position: relative;
+    z-index: 5;
+    /* text-align: center; */
+}
+.gameteam-container{
+    padding-top: 75px;
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gameteam-container h1{
+
+}

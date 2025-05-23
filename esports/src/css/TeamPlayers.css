@@ -1,0 +1,272 @@
+.team-players-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 75px;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.team-name {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 5;
+}
+
+.team-social {
+    margin: 0.5rem 0 1.5rem;
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
+.team-games {
+    margin: 1.5rem 0;
+}
+
+.team-games h3 {
+    color: #cccccc;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.games-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.game-tag {
+    background-color: rgba(32, 32, 32, 0.9);
+    border-radius: 5px;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-name {
+    color: white;
+    font-weight: 600;
+}
+
+.game-platform {
+    color: #cccccc;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.team-section {
+    margin: 2rem 0;
+}
+
+.section-title {
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #2563eb;
+    border-radius: 3px;
+}
+
+.player-card-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.player-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.14);
+    border: solid 2px rgba(255, 255, 255, 0.26);
+    overflow: hidden;
+    width: 280px;
+    height: 350px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 8px 15px rgba(255, 255, 255, 0.2);
+}
+
+.captain-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    z-index: 10;
+}
+
+.player-text-inside {
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0.5rem 0;
+}
+
+.player-text-header {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.player-roll-animation {
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.player-roll-animation:hover .player-image {
+    opacity: 0.3;
+    transform: scale(1.1);
+}
+
+.player-roll-animation:hover .player-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.filler0image {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.player-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.player-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    z-index: 5;
+    padding: 1rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.player-link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.no-players-message {
+    background-color: rgba(30, 30, 30, 0.8);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 3rem auto;
+}
+
+.no-players-message p {
+    color: #cccccc;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.back-button-container {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.back-button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.loading-container {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .player-card {
+        width: 240px;
+        height: 300px;
+    }
+    
+    .team-name {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .games-list {
+        gap: 0.5rem;
+    }
+    
+    .game-tag {
+        font-size: 0.9rem;
+    }
+}
